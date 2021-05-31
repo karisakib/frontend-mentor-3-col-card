@@ -1,0 +1,137 @@
+:root {
+  /* Column colors */
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* Paragraphs */
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+
+  /* Background, headings, buttons */
+  --very-light-gray: hsl(0, 0%, 95%);
+
+  /* Body font size */
+  --font-size: 15px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  background-color: var(--very-light-gray);
+  font-size: var(--font-size);
+  position: relative;
+}
+
+.container {
+  width: 900px;
+  height: 400px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+
+img {
+  margin-bottom: 30px;
+}
+
+.col-sedan {
+  height: 100%;
+  padding: 45px;
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 8px 0px 0px 8px;
+}
+
+.col-suv {
+  height: 100%;
+  padding: 45px;
+  background-color: hsl(184, 100%, 22%);
+}
+
+.col-luxury {
+  height: 100%;
+  padding: 45px;
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0px 8px 8px 0px;
+}
+
+.col-title {
+  color: var(--very-light-gray);
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.col-text {
+  color: var(--transparent-white);
+  line-height: 1.75;
+
+  margin-top: 30px;
+}
+
+button {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: var(--font-size);
+  background-color: var(--very-light-gray);
+  border-radius: 50px;
+  border: none;
+
+  /* top | right | bottom | left */
+  padding: 14px 25px 14px 25px;
+
+  margin-top: 75px;
+}
+
+button:hover,
+button:active {
+    background-color: transparent;
+    color: var(--very-light-gray);
+    border: 2px solid var(--very-light-gray);
+  
+    /* top | right | bottom | left */
+    padding: 12px 23px 12px 23px;
+    cursor: pointer;
+  }
+
+.col-button-sedan {
+  color: var(--bright-orange);
+}
+
+.col-button-suv {
+  color: var(--dark-cyan);
+}
+
+.col-button-luxury {
+  color: var(--very-dark-cyan);
+}
+
+
+@media (max-width: 375px) {
+    .container {
+      flex-direction: column;
+      width: 300px;
+      height: auto;
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+
+    .col-sedan {
+      border-radius: 8px 8px 0px 0px;
+    }
+    .col-luxury {
+        border-radius: 0px 0px 8px 8px;
+      }
+
+  }
