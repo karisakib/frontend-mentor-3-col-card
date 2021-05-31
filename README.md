@@ -19,13 +19,13 @@ Users should be able to:
 
 ### Screenshots
 
-![](./desktop-view.jpg)
+![](./desktop-view.png)
 ![](./mobile-view.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/karisakib/frontend-mentor-3-col-card)
+- Live Site URL: [Add live site URL here](https://dazzling-golick-d36aa7.netlify.app)
 
 ### Built with
 
